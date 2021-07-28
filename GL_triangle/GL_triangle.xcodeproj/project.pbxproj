@@ -12,6 +12,7 @@
 		AE66427926B173FF008B3626 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE66427826B173FF008B3626 /* Cocoa.framework */; };
 		AE66427B26B1740E008B3626 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE66427A26B1740E008B3626 /* IOKit.framework */; };
 		AE66427D26B17417008B3626 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE66427C26B17417008B3626 /* CoreVideo.framework */; };
+		AE66428026B176EA008B3626 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE66427E26B176EA008B3626 /* shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,10 @@
 		AE66427826B173FF008B3626 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AE66427A26B1740E008B3626 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		AE66427C26B17417008B3626 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		AE66427E26B176EA008B3626 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../common/shader.cpp; sourceTree = "<group>"; };
+		AE66427F26B176EA008B3626 /* shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = shader.hpp; path = ../../common/shader.hpp; sourceTree = "<group>"; };
+		AE66428326B17CF4008B3626 /* SimpleFragment.f */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.fortran; path = SimpleFragment.f; sourceTree = "<group>"; };
+		AE66428426B17D2C008B3626 /* SimpleVertex.v */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertex.v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				AE66426E26B172A0008B3626 /* main.cpp */,
+				AE66428426B17D2C008B3626 /* SimpleVertex.v */,
+				AE66428326B17CF4008B3626 /* SimpleFragment.f */,
+				AE66427E26B176EA008B3626 /* shader.cpp */,
+				AE66427F26B176EA008B3626 /* shader.hpp */,
 			);
 			path = GL_triangle;
 			sourceTree = "<group>";
@@ -142,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE66428026B176EA008B3626 /* shader.cpp in Sources */,
 				AE66426F26B172A0008B3626 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
