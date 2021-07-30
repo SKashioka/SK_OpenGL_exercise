@@ -13,6 +13,7 @@
 		AECBB78B26B3F95500D8CB7A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECBB78A26B3F95500D8CB7A /* IOKit.framework */; };
 		AECBB78D26B3F95B00D8CB7A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECBB78C26B3F95B00D8CB7A /* OpenGL.framework */; };
 		AECBB79026B3F99700D8CB7A /* SimpleFragment.f in Sources */ = {isa = PBXBuildFile; fileRef = AECBB78E26B3F99700D8CB7A /* SimpleFragment.f */; };
+		AECBB79426B414A700D8CB7A /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AECBB79226B414A700D8CB7A /* shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,9 @@
 		AECBB78C26B3F95B00D8CB7A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		AECBB78E26B3F99700D8CB7A /* SimpleFragment.f */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.fortran; name = SimpleFragment.f; path = ../../GL_triangle/GL_triangle/SimpleFragment.f; sourceTree = "<group>"; };
 		AECBB78F26B3F99700D8CB7A /* SimpleVertex.v */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.v; path = ../../GL_triangle/GL_triangle/SimpleVertex.v; sourceTree = "<group>"; };
+		AECBB79126B4082200D8CB7A /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = common; path = ../common; sourceTree = "<group>"; };
+		AECBB79226B414A700D8CB7A /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../common/shader.cpp; sourceTree = "<group>"; };
+		AECBB79326B414A700D8CB7A /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = shader.hpp; path = ../../common/shader.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 		AECBB77D26B3F87500D8CB7A /* GL_matrix */ = {
 			isa = PBXGroup;
 			children = (
+				AECBB79226B414A700D8CB7A /* shader.cpp */,
+				AECBB79326B414A700D8CB7A /* shader.hpp */,
 				AECBB78E26B3F99700D8CB7A /* SimpleFragment.f */,
 				AECBB78F26B3F99700D8CB7A /* SimpleVertex.v */,
 				AECBB77E26B3F87500D8CB7A /* main.cpp */,
@@ -83,6 +89,7 @@
 		AECBB78526B3F94600D8CB7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AECBB79126B4082200D8CB7A /* common */,
 				AECBB78C26B3F95B00D8CB7A /* OpenGL.framework */,
 				AECBB78A26B3F95500D8CB7A /* IOKit.framework */,
 				AECBB78826B3F94D00D8CB7A /* CoreVideo.framework */,
@@ -147,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECBB79426B414A700D8CB7A /* shader.cpp in Sources */,
 				AECBB79026B3F99700D8CB7A /* SimpleFragment.f in Sources */,
 				AECBB77F26B3F87500D8CB7A /* main.cpp in Sources */,
 			);
