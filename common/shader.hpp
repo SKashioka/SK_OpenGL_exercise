@@ -1,10 +1,3 @@
-//
-//  shader.hpp
-//  GL_triangle
-//
-//  Created by 柏岡秀哉 on 2021/07/28.
-//
-
 #ifndef SHADER_HPP
 #define SHADER_HPP
 
