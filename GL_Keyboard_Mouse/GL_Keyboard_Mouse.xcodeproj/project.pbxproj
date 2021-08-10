@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE1826C126C2452C00EDBF24 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1826C026C2452C00EDBF24 /* main.cpp */; };
+		AE1826C926C2453800EDBF24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1826C826C2453800EDBF24 /* Cocoa.framework */; };
+		AE1826CB26C2454300EDBF24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1826CA26C2454300EDBF24 /* OpenGL.framework */; };
+		AE1826CD26C2454E00EDBF24 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1826CC26C2454E00EDBF24 /* CoreVideo.framework */; };
+		AE1826CF26C2455500EDBF24 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1826CE26C2455500EDBF24 /* IOKit.framework */; };
+		AE1826D826C24AE600EDBF24 /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1826D426C24AE600EDBF24 /* controls.cpp */; };
+		AE1826D926C24AE600EDBF24 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1826D526C24AE600EDBF24 /* shader.cpp */; };
+		AE1826DA26C24AE600EDBF24 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1826D626C24AE600EDBF24 /* texture.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE1826BB26C2452C00EDBF24 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE1826BD26C2452C00EDBF24 /* GL_Keyboard_Mouse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GL_Keyboard_Mouse; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1826C026C2452C00EDBF24 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AE1826C826C2453800EDBF24 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AE1826CA26C2454300EDBF24 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		AE1826CC26C2454E00EDBF24 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		AE1826CE26C2455500EDBF24 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		AE1826D026C245E900EDBF24 /* TransformVertexShader.vertexshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = TransformVertexShader.vertexshader; sourceTree = "<group>"; };
+		AE1826D126C245E900EDBF24 /* TextureFragmentShader.fragmentshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = TextureFragmentShader.fragmentshader; sourceTree = "<group>"; };
+		AE1826D226C24AE600EDBF24 /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = shader.hpp; path = ../../common/shader.hpp; sourceTree = "<group>"; };
+		AE1826D326C24AE600EDBF24 /* controls.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = controls.hpp; path = ../../common/controls.hpp; sourceTree = "<group>"; };
+		AE1826D426C24AE600EDBF24 /* controls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = controls.cpp; path = ../../common/controls.cpp; sourceTree = "<group>"; };
+		AE1826D526C24AE600EDBF24 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../common/shader.cpp; sourceTree = "<group>"; };
+		AE1826D626C24AE600EDBF24 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../common/texture.cpp; sourceTree = "<group>"; };
+		AE1826D726C24AE600EDBF24 /* texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = texture.hpp; path = ../../common/texture.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE1826BA26C2452C00EDBF24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1826C926C2453800EDBF24 /* Cocoa.framework in Frameworks */,
+				AE1826CB26C2454300EDBF24 /* OpenGL.framework in Frameworks */,
+				AE1826CD26C2454E00EDBF24 /* CoreVideo.framework in Frameworks */,
+				AE1826CF26C2455500EDBF24 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE1826B426C2452C00EDBF24 = {
+			isa = PBXGroup;
+			children = (
+				AE1826BF26C2452C00EDBF24 /* GL_Keyboard_Mouse */,
+				AE1826BE26C2452C00EDBF24 /* Products */,
+				AE1826C726C2453700EDBF24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE1826BE26C2452C00EDBF24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE1826BD26C2452C00EDBF24 /* GL_Keyboard_Mouse */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE1826BF26C2452C00EDBF24 /* GL_Keyboard_Mouse */ = {
+			isa = PBXGroup;
+			children = (
+				AE1826D126C245E900EDBF24 /* TextureFragmentShader.fragmentshader */,
+				AE1826D026C245E900EDBF24 /* TransformVertexShader.vertexshader */,
+				AE1826C026C2452C00EDBF24 /* main.cpp */,
+				AE1826D426C24AE600EDBF24 /* controls.cpp */,
+				AE1826D326C24AE600EDBF24 /* controls.hpp */,
+				AE1826D526C24AE600EDBF24 /* shader.cpp */,
+				AE1826D226C24AE600EDBF24 /* shader.hpp */,
+				AE1826D626C24AE600EDBF24 /* texture.cpp */,
+				AE1826D726C24AE600EDBF24 /* texture.hpp */,
+			);
+			path = GL_Keyboard_Mouse;
+			sourceTree = "<group>";
+		};
+		AE1826C726C2453700EDBF24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE1826CE26C2455500EDBF24 /* IOKit.framework */,
+				AE1826CC26C2454E00EDBF24 /* CoreVideo.framework */,
+				AE1826CA26C2454300EDBF24 /* OpenGL.framework */,
+				AE1826C826C2453800EDBF24 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE1826BC26C2452C00EDBF24 /* GL_Keyboard_Mouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1826C426C2452C00EDBF24 /* Build configuration list for PBXNativeTarget "GL_Keyboard_Mouse" */;
+			buildPhases = (
+				AE1826B926C2452C00EDBF24 /* Sources */,
+				AE1826BA26C2452C00EDBF24 /* Frameworks */,
+				AE1826BB26C2452C00EDBF24 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GL_Keyboard_Mouse;
+			productName = GL_Keyboard_Mouse;
+			productReference = AE1826BD26C2452C00EDBF24 /* GL_Keyboard_Mouse */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE1826B526C2452C00EDBF24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AE1826BC26C2452C00EDBF24 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = AE1826B826C2452C00EDBF24 /* Build configuration list for PBXProject "GL_Keyboard_Mouse" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE1826B426C2452C00EDBF24;
+			productRefGroup = AE1826BE26C2452C00EDBF24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE1826BC26C2452C00EDBF24 /* GL_Keyboard_Mouse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE1826B926C2452C00EDBF24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1826D926C24AE600EDBF24 /* shader.cpp in Sources */,
+				AE1826DA26C24AE600EDBF24 /* texture.cpp in Sources */,
+				AE1826C126C2452C00EDBF24 /* main.cpp in Sources */,
+				AE1826D826C24AE600EDBF24 /* controls.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE1826C226C2452C00EDBF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AE1826C326C2452C00EDBF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AE1826C526C2452C00EDBF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lglew",
+					"-lglfw",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE1826C626C2452C00EDBF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lglew",
+					"-lglfw",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE1826B826C2452C00EDBF24 /* Build configuration list for PBXProject "GL_Keyboard_Mouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1826C226C2452C00EDBF24 /* Debug */,
+				AE1826C326C2452C00EDBF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE1826C426C2452C00EDBF24 /* Build configuration list for PBXNativeTarget "GL_Keyboard_Mouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1826C526C2452C00EDBF24 /* Debug */,
+				AE1826C626C2452C00EDBF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE1826B526C2452C00EDBF24 /* Project object */;
+}
