@@ -44,6 +44,7 @@
 		AE1826D526C24AE600EDBF24 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../common/shader.cpp; sourceTree = "<group>"; };
 		AE1826D626C24AE600EDBF24 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../common/texture.cpp; sourceTree = "<group>"; };
 		AE1826D726C24AE600EDBF24 /* texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = texture.hpp; path = ../../common/texture.hpp; sourceTree = "<group>"; };
+		AE1826DB26C2562000EDBF24 /* uvtemplate.DDS */ = {isa = PBXFileReference; lastKnownFileType = file; path = uvtemplate.DDS; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 			children = (
 				AE1826D126C245E900EDBF24 /* TextureFragmentShader.fragmentshader */,
 				AE1826D026C245E900EDBF24 /* TransformVertexShader.vertexshader */,
+				AE1826DB26C2562000EDBF24 /* uvtemplate.DDS */,
 				AE1826C026C2452C00EDBF24 /* main.cpp */,
 				AE1826D426C24AE600EDBF24 /* controls.cpp */,
 				AE1826D326C24AE600EDBF24 /* controls.hpp */,
