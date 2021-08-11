@@ -1,4 +1,8 @@
 // Include GLFW
+
+#include <glm/gtx/string_cast.hpp>
+#include <iostream>
+
 #include <GLFW/glfw3.h>
 extern GLFWwindow* window; // The "extern" keyword here is to access the variable "window" declared in tutorialXXX.cpp. This is a hack to keep the tutorials simple. Please avoid this.
 
@@ -119,14 +123,14 @@ void computeMatricesFromInputs(){
     
     if(glfwGetKey( window, GLFW_KEY_0) == GLFW_PRESS){
         position = rot_x * position;
-        up = rot_x * up;
-        direction = rot_x * direction;
+        rot_up = rot_x * up;
+        direction = rot_x * direction * deltaTime * speed;
     }
 
     if(glfwGetKey( window, GLFW_KEY_1) == GLFW_PRESS){
         position = inv_rot_x * position;
         direction = inv_rot_x * direction;
-        up = inv_rot_x * up;
+        rot_up = inv_rot_x * up;
     }
     
 	float FoV = initialFoV;// - 5 * glfwGetMouseWheel(); // Now GLFW 3 requires setting up a callback for this. It's a bit too complicated for this beginner's tutorial, so it's disabled instead.

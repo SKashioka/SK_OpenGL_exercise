@@ -12,6 +12,10 @@
 		AE1826F426C35D7E00EDBF24 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1826F326C35D7E00EDBF24 /* CoreVideo.framework */; };
 		AE1826F626C35D8500EDBF24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1826F526C35D8500EDBF24 /* OpenGL.framework */; };
 		AE1826F826C35D8B00EDBF24 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1826F726C35D8B00EDBF24 /* IOKit.framework */; };
+		AE18270526C35F1700EDBF24 /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1826FD26C35F1600EDBF24 /* controls.cpp */; };
+		AE18270626C35F1700EDBF24 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE18270126C35F1600EDBF24 /* texture.cpp */; };
+		AE18270726C35F1700EDBF24 /* objloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE18270326C35F1700EDBF24 /* objloader.cpp */; };
+		AE18270826C35F1700EDBF24 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE18270426C35F1700EDBF24 /* shader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +41,14 @@
 		AE1826FA26C35E3100EDBF24 /* TransformVertexShader.vertexshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = TransformVertexShader.vertexshader; sourceTree = "<group>"; };
 		AE1826FB26C35E3200EDBF24 /* TextureFragmentShader.fragmentshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = TextureFragmentShader.fragmentshader; sourceTree = "<group>"; };
 		AE1826FC26C35E3200EDBF24 /* uvmap.DDS */ = {isa = PBXFileReference; lastKnownFileType = file; path = uvmap.DDS; sourceTree = "<group>"; };
+		AE1826FD26C35F1600EDBF24 /* controls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = controls.cpp; path = ../../common/controls.cpp; sourceTree = "<group>"; };
+		AE1826FE26C35F1600EDBF24 /* controls.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = controls.hpp; path = ../../common/controls.hpp; sourceTree = "<group>"; };
+		AE1826FF26C35F1600EDBF24 /* texture.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = texture.hpp; path = ../../common/texture.hpp; sourceTree = "<group>"; };
+		AE18270026C35F1600EDBF24 /* shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = shader.hpp; path = ../../common/shader.hpp; sourceTree = "<group>"; };
+		AE18270126C35F1600EDBF24 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../../common/texture.cpp; sourceTree = "<group>"; };
+		AE18270226C35F1600EDBF24 /* objloader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = objloader.hpp; path = ../../common/objloader.hpp; sourceTree = "<group>"; };
+		AE18270326C35F1700EDBF24 /* objloader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = objloader.cpp; path = ../../common/objloader.cpp; sourceTree = "<group>"; };
+		AE18270426C35F1700EDBF24 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../common/shader.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,14 @@
 				AE1826FB26C35E3200EDBF24 /* TextureFragmentShader.fragmentshader */,
 				AE1826FA26C35E3100EDBF24 /* TransformVertexShader.vertexshader */,
 				AE1826FC26C35E3200EDBF24 /* uvmap.DDS */,
+				AE1826FD26C35F1600EDBF24 /* controls.cpp */,
+				AE1826FE26C35F1600EDBF24 /* controls.hpp */,
+				AE18270326C35F1700EDBF24 /* objloader.cpp */,
+				AE18270226C35F1600EDBF24 /* objloader.hpp */,
+				AE18270426C35F1700EDBF24 /* shader.cpp */,
+				AE18270026C35F1600EDBF24 /* shader.hpp */,
+				AE18270126C35F1600EDBF24 /* texture.cpp */,
+				AE1826FF26C35F1600EDBF24 /* texture.hpp */,
 			);
 			path = GL_load_model;
 			sourceTree = "<group>";
@@ -150,7 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE18270826C35F1700EDBF24 /* shader.cpp in Sources */,
+				AE18270726C35F1700EDBF24 /* objloader.cpp in Sources */,
+				AE18270626C35F1700EDBF24 /* texture.cpp in Sources */,
 				AE1826EA26C35D5E00EDBF24 /* main.cpp in Sources */,
+				AE18270526C35F1700EDBF24 /* controls.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
