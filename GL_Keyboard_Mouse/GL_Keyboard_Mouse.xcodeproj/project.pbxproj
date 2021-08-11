@@ -12,9 +12,9 @@
 		AE1826CB26C2454300EDBF24 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1826CA26C2454300EDBF24 /* OpenGL.framework */; };
 		AE1826CD26C2454E00EDBF24 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1826CC26C2454E00EDBF24 /* CoreVideo.framework */; };
 		AE1826CF26C2455500EDBF24 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1826CE26C2455500EDBF24 /* IOKit.framework */; };
-		AE1826D826C24AE600EDBF24 /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1826D426C24AE600EDBF24 /* controls.cpp */; };
 		AE1826D926C24AE600EDBF24 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1826D526C24AE600EDBF24 /* shader.cpp */; };
 		AE1826DA26C24AE600EDBF24 /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1826D626C24AE600EDBF24 /* texture.cpp */; };
+		AE1826DC26C280F000EDBF24 /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1826D426C24AE600EDBF24 /* controls.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -164,9 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE1826D926C24AE600EDBF24 /* shader.cpp in Sources */,
+				AE1826DC26C280F000EDBF24 /* controls.cpp in Sources */,
 				AE1826DA26C24AE600EDBF24 /* texture.cpp in Sources */,
 				AE1826C126C2452C00EDBF24 /* main.cpp in Sources */,
-				AE1826D826C24AE600EDBF24 /* controls.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

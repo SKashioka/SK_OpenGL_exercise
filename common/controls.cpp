@@ -22,7 +22,8 @@ glm::mat4 getProjectionMatrix(){
 
 // Initial position : on +Z
 glm::vec3 position = glm::vec3( 0, 0, 10 );
-glm::vec3 rotation = glm::vec3( 0, 0, 0 );
+glm::vec3 rot_up = glm::vec3( 0, 1, 0 );
+glm::vec3 rot_direction = glm::vec3( 1, 1, 1 );
 // Initial horizontal angle : toward -Z
 float horizontalAngle = 3.14f;
 // Initial vertical angle : none
@@ -32,7 +33,7 @@ float initialFoV = 45.0f;
 
 float speed = 3.0f; // 3 units / second
 float mouseSpeed = 0.005f;
-float rad = 1.0f* 3.14f/180.0f;
+float rad = 5.0f* 3.14f/180.0f;
 
 
 
@@ -75,14 +76,14 @@ void computeMatricesFromInputs(){
     
     glm::mat3 rot_x =glm::mat3(
                              glm::vec3(1.0f,  0.0f  ,   0.0f),
-                             glm::vec3(0.0f, cos(rad), -sin(rad)),
-                             glm::vec3(0.0f, sin(rad),  cos(rad))
+                             glm::vec3(0.0f, cos(rad*deltaTime), -sin(rad*deltaTime)),
+                             glm::vec3(0.0f, sin(rad*deltaTime),  cos(rad*deltaTime))
                              );
    
     glm::mat3 inv_rot_x =glm::mat3(
                              glm::vec3(1.0f,  0.0f  ,   0.0f),
-                             glm::vec3(0.0f, cos(-rad), -sin(-rad)),
-                             glm::vec3(0.0f, sin(-rad),  cos(-rad))
+                             glm::vec3(0.0f, cos(-rad*deltaTime), -sin(-rad*deltaTime)),
+                             glm::vec3(0.0f, sin(-rad*deltaTime),  cos(-rad*deltaTime))
                              );
    
     glm::mat3 rot_y =glm::mat3(
@@ -96,9 +97,9 @@ void computeMatricesFromInputs(){
                              glm::vec3(-sin(rad*deltaTime), cos(rad*deltaTime), 0.0f),
                              glm::vec3(0.0f, 0.0f, 1.0f)
                              );
+    rot_up = up;
+    rot_direction = direction;
     
-    
-
 	// Move forward
 	if (glfwGetKey( window, GLFW_KEY_UP ) == GLFW_PRESS){
 		position += direction * deltaTime * speed;
@@ -118,8 +119,8 @@ void computeMatricesFromInputs(){
     
     if(glfwGetKey( window, GLFW_KEY_0) == GLFW_PRESS){
         position = rot_x * position;
-        direction = rot_x * direction;
         up = rot_x * up;
+        direction = rot_x * direction;
     }
 
     if(glfwGetKey( window, GLFW_KEY_1) == GLFW_PRESS){
@@ -136,9 +137,10 @@ void computeMatricesFromInputs(){
 	ViewMatrix       = glm::lookAt(
                                 position,           // Camera is here
 								position + direction, // and looks here : at the same position, plus "direction"
-								up                  // Head is up (set to 0,-1,0 to look upside-down)
+                                   up                  // Head is up (set to 0,-1,0 to look upside-down)
 						   );
 
 	// For the next frame, the "last time" will be "now"
 	lastTime = currentTime;
 }
+
